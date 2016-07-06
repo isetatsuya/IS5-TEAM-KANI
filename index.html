@@ -1,0 +1,437 @@
+<!--- 
+loginV_ja.html
+v120801-01
+このコメントの部分には(改行なども含めて)手をつけないで下さい
+--->
+
+<html>
+<head>
+
+		<!--日本語対応-->
+
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+
+<title>ログイン画面</title>
+
+		<!--cacheを不可にする-->
+
+		<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 2008 00:00:00 GMT">
+
+        <!--Android対応-->
+        <meta name="viewport" content="width=device-width;target-densitydpi=device-dpi" />
+<style type="text/css">
+<!--
+body{
+background-color:#FFFFFF;
+text-align: center;
+font-size: 12px;
+line-height: 16px;
+}
+.all_text{
+font-size: 12px;
+line-height: 16px;
+}
+#copyright {
+font-size: 10px;
+color: #FFFFFF;
+}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+function tagInsert()
+{
+var tagBox = document.getElementById('tagBox');
+var insert = tagBox.value;
+if (insert == 'default') return;
+
+var tarea = document.getElementById('body');
+tarea.focus();
+
+if (false) {
+var sel = document.selection.createRange();
+sel.text = insert;
+var pos = Math.floor(insert.length) + 0;
+sel.move('character', -pos);
+sel.select();
+} else {
+var body = tarea.value;
+var at = tarea.selectionStart;
+var tmp = body.substr(0, at);
+
+tarea.value = tmp + insert;
+}
+
+tagBox.options[0].selected = true;
+}
+-->
+</script>
+</head>
+
+<body topmargin="0" style="background-image:url(html/common/v/images/bg00.jpg);background-repeat: repeat-x;">
+<center>
+<!-- 2014-07-08 autocomplete Disabled (next line)-->
+<form action="portal.jsp" method="POST" autocomplete="off">
+<table width="318" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="html/common/v/images/docomo_logo.jpg" alt="NTT docomo" width="130" height="35" border="0"></td>
+  </tr>
+  <tr>
+    <td align="center">
+
+<!-- 2012-06-26 Comment Deleted (S)-->
+    	<table width="318" height="20" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+<!-- 2014-07-08 Prepaid URL Added (S)-->
+        <td align="left"><font size="2" face="Helvetica"><a href="https://visitor.docomowifi.com/auth/" border=0>docomo Wi-Fi for visitor</a></font></td>
+<!-- 2012-07-08 Prepaid URL Added (E)-->
+        <td align="right"><font size="2" face="Helvetica"><a href="html/common/v/ja/roaming_select_ja.html" border=0>International Roaming</a></font></td>
+        </tr>
+        </table>
+<!-- 2012-06-26 Comment Deleted (E)-->
+
+        <table width="318" border="0" cellpadding="0" cellspacing="0" bgcolor="#CC0033">
+          <tr>
+            <td width="177" height="30">
+            <img src="html/common/v/images/ja_tab.jpg" width="177" height="30" alt="Japanese" />
+            </td>
+            <td width="141" height="30">
+            <a href="portal.jsp?lang=en"><img src="html/common/v/images/en_tab.jpg" alt="English" width="141" height="30" border="0" /></a>
+            </td>
+          </tr>
+        </table>
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+    
+<table width="318" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="314">
+    <img src="html/common/v/images/title.jpg" width="314" height="55" alt="docomo Wi-Fi ログイン画面" />
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" height="54" bgcolor="#CC0033"></td>
+    <td width="314" align="center" class="all_text">
+    <font size="2">spモード／mopera U／<br>ビジネスmoperaインターネット／月額300円プラン
+<br>をご利用のお客様は<br>
+	該当するサービスを選択してください。</font>
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="314" height="5"></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="314" align="center">
+
+    	<table width="285" border="0" cellspacing="0" cellpadding="1" bgcolor="#CC0033">
+          <tr>
+           	<td align="center">
+
+                <table width="283" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+           		  <tr>
+           		    <td height="7"></td>
+           		    <td width="230"></td>
+         		  </tr>
+           		  <tr>
+           		    <td width="45" align="right" class="user"><img src="html/common/v/images/id.jpg" width="42" height="20" alt="ユーザID" /></td>
+           		    <td align="left" valign="bottom">
+           		      <input type="text" name="user" id="body" size="24" maxlength="128" style="width:180px;">
+           		      </td>
+         		  </tr>
+                  <tr>
+                    <td width="45"></td>
+                    <td align="left" >
+
+    <select name="career" id="tagBox" onChange="tagInsert()">
+    <option value="">選択してください</option>
+    <option value="-mopera@docomo">mopera U</option>
+    <option value="-mopera@docomo">ﾋﾞｼﾞﾈｽmoperaｲﾝﾀｰﾈｯﾄ</option>
+    <option value="-spmode@docomo">spモード</option>
+<!-- 2014-07-08 Monthly plan Added (S)-->
+    <option value="@docomo">月額300円ﾌﾟﾗﾝ/その他</option>
+<!-- 2014-07-08 Monthly plan Added (E)-->
+  	</select>
+
+                    </td>
+                  </tr>
+           		  <tr>
+           		    <td height="7"></td>
+           		    <td width="230"></td>
+         		  </tr>
+                  <tr>
+           		    <td width="45"></td>
+           		    <td align="left" valign="bottom"></td>
+         		  </tr>
+           		  <tr>
+           		    <td width="45" align="right" class="user"><img src="html/common/v/images/pw.jpg" width="42" height="20" alt="パスワード" /></td>
+           		    <td align="left"><input type="password" name="password" size="24" maxlength="128" style="width:180px;"></td>
+         		  </tr>
+           		  <tr>
+           		    <td height="7"></td>
+           		    <td width="230"></td>
+         		  </tr>
+                  <tr>
+           		    <td width="45"></td>
+           		    <td align="left" valign="bottom"></td>
+         		  </tr>
+       		    </table>
+
+             </td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306">&nbsp;</td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center" class="all_text">
+    <input type="checkbox" name="cookie" value="on">
+        <font size="2">次回からユーザID/パスワードの入力を省略<br>
+      &lt; 最大30日間ユーザIDを保存します &gt;</font>
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" height="61" bgcolor="#CC0033"></td>
+    <td width="314" align="center">
+
+<input type="hidden" name="mode" value="activate">
+<input type="hidden" name="lang" value="ja">
+
+        <table width="265" border="0" cellpadding="0" cellspacing="0">
+           <tr>
+             <td>
+             <input type="image" src="html/common/v/images/login_b.jpg" alt="ログイン" value="ログイン" /></td>
+             <td width="3"></td>
+             <td>
+             <input type="image" onClick="this.form.reset();return false" src="html/common/v/images/clear_b.jpg" alt="クリア" value="クリア" />
+             </td>
+           </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="5"></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+    	<table width="280" border="0" cellpadding="3" cellspacing="0">
+          <tr>
+            <td valign="top" class="all_text">●</td>
+            <td align="left" valign="top" class="all_text">
+            <p>
+				<font size="2">spモードをご利用のお客様は、docomo Wi-FiユーザIDを入力後プルダウンメニューより「spモード」を選択してください。<br>
+				docomo Wi-FiユーザIDは[お客様サポート]-[spモード各種設定]サイトからご確認いただけます。</font>
+			</p>
+			<p>
+				<font size="2">例: (docomo Wi-FiユーザID)-spmode@docomo</font>
+			</p>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+    	<table width="280" border="0" cellpadding="3" cellspacing="0">
+  		  <tr>
+    	    <td valign="top" class="all_text">●</td>
+    		<td align="left" valign="top" class="all_text">
+			<p>
+				<font size="2">mopera U／ビジネスmoperaインターネットをご利用のお客様は、docomo Wi-FiユーザIDを入力後プルダウンメニューより
+				「mopera U/ﾋﾞｼﾞﾈｽmoperaｲﾝﾀｰﾈｯﾄ」を選択してください。</font>
+			</p>
+			<p>
+				<font size="2">例: (docomo Wi-FiユーザID)-mopera@docomo</font>
+			</p>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+    	<table width="280" border="0" cellpadding="3" cellspacing="0">
+  		  <tr>
+    	    <td valign="top" class="all_text">●</td>
+    		<td align="left" valign="top" class="all_text">
+			<p>
+				<font size="2">月額300円プランをご利用のお客様は、docomo Wi-FiユーザIDを入力後、プルダウンメニューより「月額300円ﾌﾟﾗﾝ/その他」を選択してください。
+</font>
+			</p>
+			<p>
+				<font size="2">例: (docomo Wi-FiユーザID)@docomo</font>
+			</p>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+        <table width="280" border="0" cellpadding="3" cellspacing="0">
+          <tr>
+            <td valign="top" class="all_text">●</td>
+            <td align="left" valign="top" class="all_text">
+            <font color="#CC0033" size="2"><strong>spモード アクセス制限サービスをご契約のお客様へ</strong></font><br>
+			<font size="2">docomo Wi-Fi(spモード)をご利用時もアクセス制限サービスが適用されます。<br>
+			(FOMA接続時の設定がdocomo Wi-Fi(spモード)をご利用時にも適用となります。)<br>
+			アクセス制限サービスご契約時は、</font><font color="#CC0033" size="2"><strong>ローミングエリアがご利用いただけません。</strong></font>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+        <table width="280" border="0" cellpadding="3" cellspacing="0">
+          <tr>
+            <td valign="top" class="all_text">●</td>
+            <td align="left" valign="top" class="all_text">
+            <font color="#CC0033" size="2"><strong>mopera U アクセス制限をご契約のお客様へ</strong></font><br>
+			<font size="2">docomo Wi-Fi(mopera U)をご利用時もウイルスサイトブロック／特定サイトブロックが適用されます。<br>
+			(FOMA接続時の設定がdcomo Wi-Fi(mopera U)をご利用時にも適用となります。)<br>
+			アクセス制限設定時は、</font><font color="#CC0033" size="2"><strong>ローミングエリアがご利用いただけません。</strong></font><br>
+			<font size="2">ローミングエリア接続時は、ウイルスサイトブロックを「OFF」・特定サイトブロックを「設定なし」にしてご利用ください。</font>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+
+        <table width="280" border="0" cellpadding="3" cellspacing="0">
+          <tr>
+            <td valign="top" class="all_text">●</td>
+            <td align="left" valign="top" class="all_text">
+            <font color="#CC0033" size="2"><strong>ビジネスmoperaインターネット URL制限タイプをご契約のお客様へ</strong></font><br>
+			<font size="2">docomo Wi-Fi(ビジネスmoperaインターネット)をご利用時もURL制限機能が適用されます。
+			ローミングエリア接続時は、制限機能は非対応となりますのでご注意ください。</font>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" align="center">
+        <table width="280" border="0" cellpadding="3" cellspacing="0">
+          <tr>
+            <td valign="top" class="all_text">●</td>
+            <td align="left" valign="top" class="all_text">
+            <font color="#CC0033" size="2"><strong>iモードフルブラウザをご利用のお客様へ</strong></font><br>
+			<font size="2">iモード端末のフルブラウザ表示でPCレイアウトモードに設定されている場合、画面の一部しか表示されない場合があります。
+			その場合はケータイモードに設定してください。<br><br>
+			設定方法&nbsp;&nbsp;例: <br>サブメニュー→表示、画面→表示モード設定→ケータイモード&nbsp;&nbsp;等</font>
+			</td>
+          </tr>
+        </table>
+
+    </td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="10" align="center"><img src="html/common/v/images/line.jpg" width="278" height="3" alt="ライン" /></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+  <tr>
+    <td width="2" bgcolor="#CC0033"></td>
+    <td width="306" height="8"></td>
+    <td width="2" bgcolor="#CC0033"></td>
+  </tr>
+</table>
+
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="center" height="20" bgcolor="#CC0033" id="copyright">
+    Copyright&copy; NTT DOCOMO, Inc. All Rights Reserved.</td>
+  </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
